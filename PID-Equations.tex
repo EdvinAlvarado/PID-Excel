@@ -1,0 +1,87 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {figures/} }
+\usepackage{array}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{appendix}
+\usepackage[backend=biber, style=numeric, citestyle=numeric]{biblatex}
+\usepackage{tabularx}
+\usepackage[margin=1in]{geometry} 
+\usepackage{textcomp} %textdegree
+\usepackage[space]{grffile} %permits space in includegraphics
+%\usepackage{lipsum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Preamble
+% \addbibresource{flash biblio.bib}
+
+\renewcommand{\listfigurename}{Figures}
+\renewcommand{\listtablename}{Tables}
+%\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\rmfamily
+
+\author{Edvin Alvarado Velez \\ INQU-5995 \\ Prof. Antonio Velasquez}
+\title{Updating of Trihalomethanes' Parameters}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document
+\begin{document}
+	
+	% \begin{titlepage}
+	% 	\centering
+	% 	\large
+	% 	University of Puerto Rico\\
+	% 	Mayag\"uez Campus\\
+	% 	Department of Chemical Engineering
+		
+	% 	\vfill
+	% 	{\LARGE
+	% 	\textbf{Flash Vaporization}
+	% 	}
+	% 	\vfill
+		
+	% 	Prof. Glberto Villafa\~ne\\
+	% 	INQU 5030-020\\
+	% 	Experiment start date: December 20, 2017\\
+	% 	Experiment end date:  December 20, 2017\\
+	% 	Report submission date: January 3rd, 2018
+		
+	% 	\vspace{1cm}
+		
+	% 	Group 2\\		
+	% 	Daiza P. M\'endez \\
+	% 	Jennyliam Rodr\'iguez\\
+	% 	Edvin Alvarado	(leader)	\\
+	% 	Jean De Armas
+	% \end{titlepage}
+	
+	% \pagenumbering{gobble}
+	% \tableofcontents	
+	% \begingroup
+	% \let\clearpage\relax %lets you join both lists somehow
+	% \listoffigures	
+	% \listoftables
+	% \endgroup
+	%\clearpage
+		
+	% \pagenumbering{arabic}
+	\pagenumbering{gobble}
+	\begin{align*}
+		&x_{n+1} = x_n + dx \\
+		&dx = K_p P + K_i I + K_d D \\
+		&P_{n+1} = y_{\text{set}} - y_n \\
+		&I_{n+1} = P_{n+1} \ \mathrm{d}t \\
+		&D_{n+1} = \frac{P_{n+1} - P_n}{\mathrm{d}t} \\
+		&\mathrm{d}t = t_{n+1} - t_n
+	\end{align*}
+
+
+
+
+\end{document}
+
